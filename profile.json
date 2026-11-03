@@ -1,8 +1,8 @@
 {
   "name": "Ron Yitzhak",
-  "title": "Full-Stack Developer",
+  "title": "Software Developer",
   "location": "Olesh, Israel",
-  "summary": "Full-stack engineer with 5+ years of professional experience building production web applications with Angular and TypeScript. Designed, built, and runs a Node.js backend (Express, MongoDB, Redis) in daily production use: JWT auth with role-based access, MongoDB transactions, BullMQ job queues with scheduled push notifications, structured logging, integration tests against a real database, Docker, and CI/CD. Integrated Claude API features with structured outputs and server-side validation. Works daily with AI coding agents (Claude Code), focused on reliable, maintainable software.",
+  "summary": "Software Developer with 5+ years of professional experience building production web applications with Angular and TypeScript. Designed, built, and runs a Node.js backend (Express, MongoDB, Redis) in daily production use: JWT auth with role-based access, MongoDB transactions, BullMQ job queues with scheduled push notifications, structured logging, integration tests against a real database, Docker, and CI/CD. Integrated Claude API features with structured outputs and server-side validation. Works daily with AI coding agents (Claude Code), focused on reliable, maintainable software.",
   "yearsOfExperience": "5+",
   "contact": {
     "email": "ronchu90@gmail.com",
@@ -45,7 +45,7 @@
   ],
   "experience": [
     {
-      "role": "Full Stack Developer",
+      "role": "Software Developer",
       "company": "Bolt",
       "period": "2021 - 2026",
       "highlights": [
