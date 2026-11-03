@@ -1,0 +1,53 @@
+<div class="chat">
+  <header class="head">
+    <div class="bot" aria-hidden="true">🤖</div>
+    <div class="head-text">
+      <strong>Ask my assistant</strong>
+      <span>Answers about my skills, experience and projects</span>
+    </div>
+    @if (messages().length) {
+      <button type="button" class="clear" (click)="reset()" title="Start over" aria-label="Start over">↺</button>
+    }
+  </header>
+
+  <div class="log" #log aria-live="polite">
+    <div class="bubble assistant">Hi! 👋 What would you like to know about my stack?</div>
+
+    @if (!messages().length) {
+      <div class="suggestions">
+        @for (s of suggestions; track s) {
+          <button type="button" (click)="send(s)">{{ s }}</button>
+        }
+      </div>
+    }
+
+    @for (m of messages(); track $index) {
+      <div class="bubble" [class.user]="m.role === 'user'" [class.assistant]="m.role === 'assistant'">
+        @if (m.content) {
+          {{ m.content }}
+        } @else {
+          <span class="typing" aria-label="Typing"><i></i><i></i><i></i></span>
+        }
+      </div>
+    }
+
+    @if (error()) {
+      <div class="error">😕 {{ error() }}</div>
+    }
+  </div>
+
+  <form class="input" (ngSubmit)="send()">
+    <input
+      #input
+      id="chat-input"
+      name="question"
+      [(ngModel)]="draft"
+      [disabled]="busy()"
+      maxlength="1000"
+      autocomplete="off"
+      placeholder="Type your question…"
+      aria-label="Your question"
+    />
+    <button type="submit" [disabled]="busy() || !draft.trim()" aria-label="Send">➤</button>
+  </form>
+</div>

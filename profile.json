@@ -1,0 +1,93 @@
+{
+  "name": "Ron Yitzhak",
+  "title": "Full-Stack Developer",
+  "location": "Olesh, Israel",
+  "summary": "Full-stack engineer with 5+ years of professional experience building production web applications with Angular and TypeScript. Designed, built, and runs a Node.js backend (Express, MongoDB, Redis) in daily production use: JWT auth with role-based access, MongoDB transactions, BullMQ job queues with scheduled push notifications, structured logging, integration tests against a real database, Docker, and CI/CD. Integrated Claude API features with structured outputs and server-side validation. Works daily with AI coding agents (Claude Code), focused on reliable, maintainable software.",
+  "yearsOfExperience": "5+",
+  "contact": {
+    "email": "ronchu90@gmail.com",
+    "github": "https://github.com/ronyitz?tab=repositories",
+    "linkedin": "https://www.linkedin.com/in/ron-yitzhak1990/"
+  },
+  "skills": [
+    {
+      "group": "Backend",
+      "items": ["Node.js", "Express", "REST APIs", "JWT", "Role-Based Authorization", "Redis/Valkey", "BullMQ", "Web Push", "Swagger/OpenAPI"]
+    },
+    {
+      "group": "Databases",
+      "items": ["MongoDB", "Mongoose", "PostgreSQL", "Microsoft SQL Server"]
+    },
+    {
+      "group": "Frontend",
+      "items": ["Angular", "TypeScript", "JavaScript", "HTML", "CSS", "jQuery", "React"]
+    },
+    {
+      "group": "AI Integration",
+      "items": ["Claude API", "Structured Outputs", "Prompt Engineering", "Zod"]
+    },
+    {
+      "group": "Testing & CI/CD",
+      "items": ["Jest", "Supertest", "GitHub Actions", "CI/CD Pipelines"]
+    },
+    {
+      "group": "Programming",
+      "items": ["Java", "C#", "Python", "C++"]
+    },
+    {
+      "group": "DevOps & Tools",
+      "items": ["Git", "Docker", "Docker Compose"]
+    },
+    {
+      "group": "AI-Assisted Development",
+      "items": ["Claude Code", "Copilot"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Bolt",
+      "period": "2021 - 2026",
+      "highlights": [
+        "Developed and maintained production web applications using Angular, TypeScript, and JavaScript.",
+        "Worked with Node.js and Express to debug and fix issues in existing REST APIs and server-side functionality.",
+        "Integrated frontend applications with backend services through HTTP-based APIs and asynchronous communication.",
+        "Worked with HTTP, CORS, request/response handling, caching, cookies, and browser storage.",
+        "Collaborated with the development team on production features, bug fixes, and software maintenance."
+      ]
+    },
+    {
+      "role": "Web & Mobile Developer",
+      "company": "CompFuture",
+      "period": "2019 - 2021",
+      "highlights": [
+        "Developed web and mobile applications, with a strong focus on mobile application development.",
+        "Implemented and maintained mobile application features based on project requirements."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Home Management System",
+      "description": "Full-stack web app with a React frontend and a Node.js/Express REST API for managing household tasks.",
+      "stack": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Mongoose", "Redis/Valkey", "JWT", "Swagger", "Jest", "Supertest", "GitHub Actions", "Render"],
+      "link": "https://github.com/ronyitz?tab=repositories",
+      "highlights": [
+        "JWT-based authentication, role-based authorization with household-level data isolation, request validation, and centralized error handling.",
+        "Web Push notifications (VAPID) that alert household members in real time when a task is completed.",
+        "MongoDB data models and database operations using Mongoose.",
+        "Redis/Valkey-based fixed-window rate limiting.",
+        "REST API documented with Swagger/OpenAPI.",
+        "API integration tests with Jest and Supertest, and a GitHub Actions CI/CD pipeline that gates deployment to Render on passing tests.",
+        "API containerized with Docker, plus a Docker Compose local environment (API, MongoDB, Redis) with persistent volumes and live reload."
+      ]
+    }
+  ],
+  "education": [
+    { "degree": "B.Sc. Software Engineering", "school": "Ben Gurion University of the Negev", "period": "2014 - 2019" }
+  ],
+  "military": [
+    { "role": "Combat soldier", "unit": "Battalion 76, Engineering Corps", "period": "2008 - 2011" }
+  ],
+  "extraNotesForAssistant": ""
+}

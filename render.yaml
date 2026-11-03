@@ -1,0 +1,16 @@
+# Render Blueprint: one web service that builds the Angular site and runs the Node server.
+services:
+  - type: web
+    name: ron-yitzhak-cv
+    runtime: node
+    plan: free
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: ANTHROPIC_API_KEY
+        sync: false # you paste the key in the Render dashboard; it never goes in git
+      - key: RATE_LIMIT
+        value: 20

@@ -1,0 +1,60 @@
+:root {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --ink: #1f2330;
+  --muted: #6b7080;
+  --line: #e7e9f0;
+  --blue: #3b7be0;
+  --blue-soft: #e6effc;
+  --green-1: #4caf50;
+  --green-2: #a5e08f;
+  --shadow: 0 2px 10px rgba(31, 35, 48, 0.06);
+  --shadow-lift: 0 10px 24px rgba(31, 35, 48, 0.1);
+  --radius: 22px;
+
+  /* Pastel palette for icon circles */
+  --peach: #f6cfa8;
+  --pink: #f4b9b8;
+  --lime: #cfe8a9;
+  --yellow: #f5e3a3;
+  --sky: #b9dcef;
+  --mint: #b5e5cf;
+  --lavender: #cdbde8;
+  --periwinkle: #b8c7ec;
+
+  --font: 'Nunito', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue-soft);
+  outline-offset: 2px;
+}
